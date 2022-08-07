@@ -1,0 +1,66 @@
+html,
+body{
+    overflow-x: hidden;
+    background: rgba(1, 238, 247, 0.062);
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.card-body{
+    border: 2px solid #00A4BD;
+    padding: 10px;
+    border-radius: 2px 10px;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+  }
+  .field span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+  .field input{
+    height: 100%;
+    width: 100%;
+    background: rgba(1, 238, 247, 0.062);
+    border: 2px solid #00A4BD;
+    padding: 10px;
+    border-radius: 2px 10px;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+.show{
+    position: absolute;
+    right: 13px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+    /* display: none; */
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+}
+.space{
+    margin-top: 16px;
+}
+.bg{
+    background: rgba(209, 209, 209, 0.247);
+    box-shadow: 0 4px 2px -2px rgb(58, 58, 58);
+}
+.form-check a{
+    text-decoration: none;
+}
+
+.create-acc a{
+    text-decoration: none;
+}
+
+
