@@ -1,4 +1,11 @@
+ <?php 
+  // session_start();
+  require_once ('config.php');
+  // require_once ('function/function.php');
+  
+	// $user_data = check_login($con);
 
+?>
 
 
 
@@ -34,14 +41,7 @@
 
 </head>
 <body>
-  <?php 
-  // session_start();
-  require_once ('config.php');
-  // require_once ('function/function.php');
-  
-	// $user_data = check_login($con);
-
-?>
+ 
 <nav class="navbar navbar-expand-lg bg-light fixed-to">
   <div class="container-fluid hello">
     <span>Hello🖐<span style="color: red;"> 
