@@ -44,7 +44,12 @@
   
 
 
-  Hello
+<!-- Navbar -->
+<?php include_once 'inc/navbar.php'; ?>
+
+
+<!-- Button Quize -->
+<?php include_once 'inc/button-quize.php'; ?>
   
   
   <!-- JavaScript Bundle with Popper -->
