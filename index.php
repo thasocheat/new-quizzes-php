@@ -1,13 +1,3 @@
- <?php 
-  // session_start();
-  require_once ('config.php');
-  // require_once ('function/function.php');
-  
-	// $user_data = check_login($con);
-
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,12 +31,22 @@
 
 </head>
 <body>
- 
+  <?php 
+  // session_start();
+  require_once ('config.php');
+  // require_once ('function/function.php');
+  
+	// $user_data = check_login($con);
+
+?>
+
+
+
 <nav class="navbar navbar-expand-lg bg-light fixed-to">
   <div class="container-fluid hello">
     <span>Hello🖐<span style="color: red;"> 
       <?php 
-//         echo $user_data['user_name']; 
+        echo $user_data['user_name']; 
       ?>
       </span></span>
 
