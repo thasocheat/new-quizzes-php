@@ -1,13 +1,3 @@
-  <?php 
-  // session_start();
-  require_once ('database/connection.php');
-  require_once ('function/function.php');
-  
-	// $user_data = check_login($con);
-
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +32,16 @@
 </head>
 <body>
   
+  <?php 
+  // session_start();
+  require_once ('database/connection.php');
+  require_once ('function/function.php');
+  
+	// $user_data = check_login($con);
+
+?>
+
+
 
 
 <!-- Navbar -->
