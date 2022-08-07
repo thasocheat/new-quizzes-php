@@ -1,3 +1,54 @@
+<?php
+    session_start();
+    
+    include_once 'database/connection.php';
+
+    $wrongps=null; 
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//Something was posted
+       
+		$user_name = $_POST['user_name'];
+		$password = $_POST['password'];
+
+		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		{
+
+			//Read from database
+			$query = "select * from users where user_name = '$user_name' limit 1";
+			$result = mysqli_query($con, $query);
+
+			if($result)
+			{
+                // setcookie('emailcookie',$user_name,time()+86400);
+                setcookie('passwordcookie',$password,time()+86400);
+				if($result && mysqli_num_rows($result) > 0)
+				{
+
+					$user_data = mysqli_fetch_assoc($result);
+					
+					if($user_data['password'] === $password)
+					{
+                                              
+						$_SESSION['id'] = $user_data['id'];
+						header("Location: ../start-quizes.php");
+						die;
+					}
+				}
+			}
+			
+			$wrongps = "ព័តមានមិនត្រឹមត្រូវ!!!";
+		}else
+		{
+			$wrongps = "ព័តមានមិនត្រឹមត្រូវ!!!";
+		}
+	}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +125,7 @@
                             </div>
                             
                             <div class="mb-3 form-check">
-                                <p class="text-center">Don't have account?<a href="inc/sign_up.php">Signup Now</a></p>
+                                <p class="text-center">Don't have account?<a href="forms/sign_up.php">Signup Now</a></p>
                             </div>
                         </form>
                     </div>
