@@ -62,7 +62,7 @@
 
       <div class="button-logout">
         
-        <a href="forms/sign_up.php" class="btn btn-info">Log Out</a>
+        <a href="forms/sign_upt.php" class="btn btn-info">Log Out</a>
       </div>
      
     </div>
@@ -73,7 +73,7 @@
 
 
 
-  
+  Hello
   
   
   <!-- JavaScript Bundle with Popper -->
